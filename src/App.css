@@ -1,38 +1,67 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+
+  padding: 40px 0;
+  width: 100%;
+  background-color: rgb(119, 179, 214);
+  min-height: 400px;
+}
+.pele {
+  background-color: #F4A460;
+  width: 310px;
   text-align: center;
-}
+  max-width: 315px;
+  position: center;
+  border-radius: 0.5rem;}
+  audio::-webkit-media-controls-panel {background-color: #F4A460; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .pele2 {
+      background-color: #F4A460;
+      width: 310px;
+      text-align: center;
+      max-width: 315px;
+      position: center;
+      border-radius: 0.5rem;}
+      audio::-webkit-media-controls-panel {background-color: #F4A460; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fit-picture{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(119, 179, 214);
+  position: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.menu a{
+  color: azure;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px;
+  border-radius: 5px;
+
+}
+.ima{
+  padding: 40px 0;
+  width: 100%;
+  background-color: rgb(119, 179, 214);
+  min-height: 200px;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD4SdUZ_yXpVIwEiXv7N0myXx2XOWQhu0yDmX9dO42zBQyZbGPnJT43E5EJ8m8T17INjh5XmuQD3mlI25F_GJ94av5itOzpyrFmrI6M9Ct2H3dzPF8ZV1e7Rj3mWNSYgjo62kFn9FZJXdep9HfCBfDCfa4Me_wWRdd3C8Mkz2KWS7tCsqz4qQyAwFM/s1600/R%C3%A1dios%20e%20Tvs%20Online.gif");
 }
 
-.App-link {
-  color: #61dafb;
-}
+.nave{
+  background-color: #8ad435;
+  width: 310px;
+  text-align: center;
+  max-width: 315px;
+  position: center;
+  border-radius: 0.5rem;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
