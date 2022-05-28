@@ -9,6 +9,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 
+
 import './App.css';
 import Contato from "./pages/Contato";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="atualidade" element={<Atualidade />} />
         <Route path="aparelhagens" element={<Aparelhagens/>} />
         <Route path="diario" element={<Diario/>} />
+        <Route path="liberalam" element={<Liberal/>} />
         <Route path="liberalam" element={<Liberal/>} />
 
 
