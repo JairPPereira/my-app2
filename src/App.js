@@ -1,59 +1,48 @@
-import {InputText, } from 'primereact/inputtext';
-import { Button } from 'primereact/button';
-import { Toast } from 'primereact/toast';
- 
- 
 
-import "primereact/resources/themes/arya-blue/theme.css";  //theme
-import "primereact/resources/primereact.min.css";                  //core css
-import "primeicons/primeicons.css";  
-import { useRef, useState } from 'react';                            //icons
- 
+import { BrowserRouter as Router, Switch, Route }  from "react-router-dom";
+import Home from './components/pages/Home'
+import Company from './components/pages/Company'
+import Contact from './components/pages/Contact'
+import Newprojets from './components/pages/Newprojets'
 
+function App(){
+  return(
+<Router>
+<ul>
+<li>Home</li>
+<li>Contato</li>
+</ul>
 
+<p>Footer</p>
 
+<Switch>
+<Route exact path="/">
 
+  <Home/>
+</Route>
+<Route exact path="/company">
 
+  <Company/>
+</Route>
+<Route exact path="/newprojets">
 
+  <Newprojets />
+</Route>
 
-
-
-import './App.css';
-
-
-function App() {
-
-  const [text, setText] = useState(' ');
-  const toastRef = useRef ( );
-  const onButtonClick = () => {
-    if (text) 
-      toastRef.current.show({severity: 'info', summary: 'Sucess', detail: text });
-       else
-       toastRef.current.show({severity: 'error', summary: 'error', detail: 'Value is required'
-    });
-  };
+<Route exact path="/contact">
 
 
-  return (
+<Contact/></Route>
 
-  <div className='App'>
-    <Toast ref={toastRef} />
-    <header className='App-header'>
-      <span className="p-float-label">
-        <InputText id="input_text" value={text} onChange={e=>setText(e.target.value)}/>
-        <label htmlFor='input_text'>Name</label>
-      </span>
 
-      <br/>
-     <Button type = "button" label= "Submit"  icon="pi pi-check" onClick={onButtonClick}></Button>
-    </header>
-  </div>
-  );
+
+  
+</Switch>
+</Router> 
+
+
+
+)
 }
-
-
-
-
-
 
 export default App
