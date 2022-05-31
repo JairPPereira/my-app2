@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const Home = () => (
-    <div className="title">
-        <h4>Home</h4>
-        <p>Essa é minha página inicial.</p>
-    </div>
-);
+import { Container, Box, BoxTitle, BoxText } from "./HomeStyles";
 
-export default Home;
+export default function Home({ boxData }) {
+  return (
+    <Container>
+      {boxData.map(box => (
+        <Box key={box.id} bgColor={box.bgColor}>
+          <BoxTitle>{box.title}</BoxTitle>
+          <BoxText>{box.text}</BoxText>
+        </Box>
+      ))}
+    </Container>
+  );
+}
