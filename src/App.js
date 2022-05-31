@@ -144,6 +144,7 @@ function Home() {
 
 
 
+
 function Aparelhagens() {
   return (
     <>
