@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const About = () =>{
+const Filme759175 = () =>{
   return (
     <div>
       <h1>Página Inicial</h1>
@@ -20,4 +20,4 @@ const About = () =>{
   );
 }
 
-export default About;
+export default Filme759175;
