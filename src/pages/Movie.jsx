@@ -11,7 +11,7 @@ import MovieCard from "../components/MovieCard";
 
 import "./Movie.css";
 
-const moviesURL = import.meta.env.VITE_API2;
+const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const Movie = () => {
@@ -33,9 +33,9 @@ const Movie = () => {
   };
 
   useEffect(() => {
-    const movieUrl = `${moviesURL}${id}?${apiKey}`;
+    const movieUrl = `${moviesURL}?${id}?${apiKey}`;
     getMovie(movieUrl);
-  }, []);
+  }, [ ]);
 
   return (
     <div className="movie-page">
