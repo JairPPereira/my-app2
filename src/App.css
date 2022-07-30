@@ -1,3 +1,112 @@
-.app-container {
-  background-color: rgb(0, 0, 0);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  .Home
+
+ {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 3rem;
+    
+  }
+  .video-js{
+    width: 100%; 
 }
+.barNav a {
+  font: 12px  Arial, Verdana,Helvetica,sans-serif;
+  color: #000;
+  text-decoration: none;
+  background:  #FFC50C;
+  text-align: center;
+  padding: 1px 5px;
+  margin-right:1px;
+  border: 1px solid #000;
+  }
+  
+  .barNav a:hover {
+  color: #666;
+  background: #FCFCFC;
+  border: 1px solid #666;
+  } 
+  .Home {
+
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 50px;
+  }
+
+
+  .acasadomedo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 50px;
+  }
+  
+  
+  .tvs {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .Radios {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 25px;
+    align-items: center;
+  }
+  
+  .sign-up {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 25px;
+    align-items: center;
+  }
+  
+  
+  .comedia {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 50px;
+    align-items: center;
+  }
+  
+  .acao {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 50px;
+    align-items: center;
+  }
+  
+  .romance {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 50px;
+    align-items: center;
+  }
